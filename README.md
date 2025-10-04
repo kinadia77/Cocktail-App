@@ -57,7 +57,7 @@ To run this application, you will need the following:
    ```
 
 5. **Open the Application**:
-   Open your browser and go to `http://localhost:3000`.
+Your app is available at: [https://kinadia77.github.io/Cocktail-mix](https://kinadia77.github.io/Cocktail-mix)
 
 ## Login Details
 If there are pre-existing accounts, you can use the following credentials to log in:
