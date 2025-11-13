@@ -1,0 +1,80 @@
+/* src/components/Navbar.css */
+
+/* === NAVBAR PRINCIPAL === */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #145a32; /* 🌿 Verde botella sólido */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f6c344; /* Dorado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+/* === CONTENEDOR CENTRAL === */
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === LOGO === */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    height: 42px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+/* === ENLACES === */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f6c344; /* Dorado */
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+    .nav-center {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+
+

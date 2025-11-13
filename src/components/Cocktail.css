@@ -1,30 +1,95 @@
-/* Cocktail.css (updated) */
-.cocktail-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
+/* ==== Navbar visible y fijo ==== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #4a154b; /* morado */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #f6c344; /* dorado */
+    z-index: 9999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.btn-favorite {
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+/* ==== Estructura interna ==== */
+.nav-center {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn-favorite:hover {
-  transform: scale(1.2);
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.btn-favorite.favorite {
-  animation: pulse 0.5s ease;
+.logo {
+    width: 45px;
+    height: 45px;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* ==== Enlaces ==== */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f6c344;
+}
+
+/* ==== Usuario ==== */
+.username {
+    color: #f6c344;
+    font-weight: 600;
+}
+
+.logout-button {
+    background: #f86464;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+    background: #e05555;
+}
+
+/* ==== Responsivo ==== */
+@media (max-width: 768px) {
+    .nav-center {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

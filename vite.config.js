@@ -1,17 +1,13 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
+// ✅ Configuración optimizada para desarrollo y despliegue
 export default defineConfig({
-  plugins: [react()],
-  base: "/Cocktail-mix/", // Update the base URL to match your GitHub repository name
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'), // Define alias for src directory
+    plugins: [react()],
+    base: "", // 👈 importante: vacío para que cargue desde la carpeta actual
+    server: {
+        port: 5173, // puedes cambiar el puerto si lo deseas
+        open: true, // abre automáticamente el navegador
     },
-  },
-  server: {
-    port: 5173, // Specify the development server port
-  },
 });
