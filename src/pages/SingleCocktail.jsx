@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { db } from "../firebase/config";
 import { doc, getDoc, setDoc } from "firebase/firestore";
+import "./SingleCocktail.css";
 
 export default function SingleCocktail() {
     const { id } = useParams();
@@ -142,26 +143,22 @@ export default function SingleCocktail() {
                 Back home
             </Link>
             <h2 className="section-title">{name}</h2>
-
             <div className="drink">
-                <img src={image} alt={name} />
+                <img src={image} alt={name} className="single-img" />  {/* 🫵 luego ajustaremos esto */}
+
                 <div className="drink-info">
                     <p><strong>Name:</strong> {name}</p>
                     <p><strong>Category:</strong> {category}</p>
                     <p><strong>Info:</strong> {info}</p>
                     <p><strong>Glass:</strong> {glass}</p>
                     <p><strong>Instructions:</strong> {instructions}</p>
-                    <p>
-                        <strong>Ingredients:</strong>{" "}
+
+                    {/* 🫵 AQUÍ VA SOLO UN CONTENEDOR */}
+                    <div className="single-tags">
                         {ingredients.map(
                             (item, index) => item && <span key={index}>{item}</span>
                         )}
-                    </p>
-
-                    {/* ❤️ Botón de favoritos */}
-                    <button onClick={toggleFavorite} className="btn btn-favorite">
-                        {isFavorite ? "💔 Remove from Favorites" : "❤️ Add to Favorites"}
-                    </button>
+                    </div>
                 </div>
             </div>
         </section>

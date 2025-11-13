@@ -1,13 +1,14 @@
 {
   "name": "cocktailvite",
   "version": "0.0.0",
-  "homepage": "https://kinadia77.github.io/Cocktail-mix",
+  "homepage": "https://kinadia77.github.io/Cocktail-App",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build"
   },
+
   "dependencies": {
     "axios": "^1.6.8",
     "firebase": "^10.12.0",

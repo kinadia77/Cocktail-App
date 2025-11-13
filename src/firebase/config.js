@@ -1,13 +1,13 @@
 // src/firebase/config.js
 
-// ✅ Importa las funciones necesarias de los SDKs de Firebase
+// Importa las funciones necesarias de los SDKs de Firebase
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// 🔐 Configuración de Firebase (tu configuración real)
+// Configuración usando la variable del .env
 const firebaseConfig = {
-    apiKey: "AIzaSyDxsT-KmTYMa5WpAFPjsvK2hRGKoudQa1E",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "cocktailapp-2c09d.firebaseapp.com",
     projectId: "cocktailapp-2c09d",
     storageBucket: "cocktailapp-2c09d.firebasestorage.app",
@@ -15,10 +15,12 @@ const firebaseConfig = {
     appId: "1:682303422115:web:e92dcb981bddde5b8f8916",
 };
 
-// 🚀 Inicializa Firebase
+// 🔎 DIAGNÓSTICO — Ver si la API key está cargando
+console.log("🔥 API KEY QUE RECIBE VITE:", import.meta.env.VITE_FIREBASE_API_KEY);
+
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
-// 🔑 Exporta la autenticación y la base de datos Firestore
+// Exporta los servicios
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-

@@ -1,0 +1,11 @@
+.home-page {
+    padding-top: 0.5rem; /* Subir todo más cerca del navbar */
+}
+
+.home-page form {
+    margin-top: 0.3rem; /* Subir la barra de búsqueda */
+}
+
+.cocktail-list {
+    padding-top: 0.5rem; /* Reduce el espacio entre búsqueda y etiquetas */
+}

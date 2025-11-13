@@ -1,0 +1,57 @@
+/* --- CONTENEDOR GENERAL --- */
+.cocktail-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+/* --- LAYOUT: imagen + texto al lado en pantallas grandes --- */
+.drink {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* En pantallas grandes: 2 columnas */
+@media (min-width: 768px) {
+    .drink {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+/* --- IMAGEN DEL CÓCTEL --- */
+.single-img {
+    width: 100%;
+    max-width: 320px;      /* ❗  Establece un límite para que NO sea gigante */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* --- INFO DEL CÓCTEL --- */
+.drink-info {
+    flex: 1;
+}
+
+.drink-info p {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+/* --- ETIQUETAS PEQUEÑAS --- */
+.single-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 1rem;
+}
+
+.single-tags span {
+    background: #f5f5f5;
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.75rem;
+    color: #333;
+}

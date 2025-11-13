@@ -1,33 +1,37 @@
-// pages/About.jsx (updated with personalized content)
 import React from "react";
 
 export default function About() {
-  return (
-    <section className="section about-section">
-      <h1 className="section-title">About MixMaster</h1>
-      <p>
-        Welcome to MixMaster, your personal cocktail companion! I created this application 
-        to solve a common problem: finding the perfect cocktail recipe for any occasion. 
-        Whether you're hosting a party, enjoying a quiet evening, or looking to impress 
-        guests, MixMaster helps you discover delicious drink recipes.
-      </p>
-      <p>
-        As a cocktail enthusiast myself, I often found it challenging to remember all the 
-        ingredients for my favorite drinks or discover new ones that matched my taste. 
-        That's why I built MixMaster - to create a personalized collection of cocktail 
-        recipes that I love and want to share with others.
-      </p>
-      <p>
-        This application uses TheCocktailDB API to fetch thousands of cocktail recipes, 
-        and allows you to save your favorites for quick access. The clean, intuitive 
-        interface makes it easy to search for cocktails by name, explore different 
-        categories, and view detailed instructions for preparation.
-      </p>
-      <p>
-        MixMaster represents my journey into web development, combining my passion for 
-        coding with my interest in mixology. I hope you enjoy using it as much as I enjoyed 
-        creating it!
-      </p>
-    </section>
-  );
+    return (
+        <section className="section about-section">
+            <h1 className="section-title">About Cocktail Corner</h1>
+
+            <p>
+                Welcome to <strong>Cocktail Corner</strong>, your personal hub for discovering
+                and enjoying the world’s best cocktail recipes. I built this application to
+                solve a common challenge: finding the right cocktail at the right moment —
+                whether you're hosting a party, relaxing after a long day, or simply wanting
+                to try something new.
+            </p>
+
+            <p>
+                As someone who enjoys exploring different flavors and experimenting with
+                mixology, I often struggled to remember ingredient combinations or find
+                reliable recipes online. <strong>Cocktail Corner</strong> was created to make
+                this simple, fun, and accessible for everyone.
+            </p>
+
+            <p>
+                This application uses the <strong>TheCocktailDB API</strong> to bring thousands
+                of cocktail recipes right to your screen. You can search for drinks by name,
+                explore categories, view detailed preparation instructions, and even save your
+                favorites for easy access anytime.
+            </p>
+
+            <p>
+                <strong>Cocktail Corner</strong> represents my growth as a web developer,
+                blending my love for coding with my passion for cocktails. I hope you enjoy
+                using this app as much as I enjoyed creating it!
+            </p>
+        </section>
+    );
 }
