@@ -35,3 +35,4 @@ export default function About() {
         </section>
     );
 }
+{/* PR 5: minor UI text cleanup */}
