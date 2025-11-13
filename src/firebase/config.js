@@ -24,3 +24,5 @@ const app = initializeApp(firebaseConfig);
 // Exporta los servicios
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+// PR 4: small firebase config cleanup comment
