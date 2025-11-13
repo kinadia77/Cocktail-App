@@ -45,3 +45,5 @@ function App() {
 }
 
 export default App;
+
+{/* PR 3: small React cleanup comment */}
